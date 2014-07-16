@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ttFont sfntVersion="OTTO" ttLibVersion="2.4">
+  <GlyphOrder src="OleoScriptSwashCaps-Bold.otf.GlyphOrder.ttx"/>
+  <head src="OleoScriptSwashCaps-Bold.otf._h_e_a_d.ttx"/>
+  <hhea src="OleoScriptSwashCaps-Bold.otf._h_h_e_a.ttx"/>
+  <maxp src="OleoScriptSwashCaps-Bold.otf._m_a_x_p.ttx"/>
+  <OS_2 src="OleoScriptSwashCaps-Bold.otf.O_S_2f_2.ttx"/>
+  <name src="OleoScriptSwashCaps-Bold.otf._n_a_m_e.ttx"/>
+  <cmap src="OleoScriptSwashCaps-Bold.otf._c_m_a_p.ttx"/>
+  <post src="OleoScriptSwashCaps-Bold.otf._p_o_s_t.ttx"/>
+  <CFF src="OleoScriptSwashCaps-Bold.otf.C_F_F_.ttx"/>
+  <GPOS src="OleoScriptSwashCaps-Bold.otf.G_P_O_S_.ttx"/>
+  <hmtx src="OleoScriptSwashCaps-Bold.otf._h_m_t_x.ttx"/>
+  <kern src="OleoScriptSwashCaps-Bold.otf._k_e_r_n.ttx"/>
+</ttFont>
