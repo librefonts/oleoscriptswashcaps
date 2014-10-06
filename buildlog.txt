@@ -1,0 +1,657 @@
+# Bake Begins!
+### (1 of 6) Copy sources
+$ cp -a /home/travis/build/fontdirectory/oleoscriptswashcaps/METADATA.json /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build
+$ cp -a /home/travis/build/fontdirectory/oleoscriptswashcaps/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build
+$ cp -a /home/travis/build/fontdirectory/oleoscriptswashcaps/FONTLOG.txt /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build
+$ cp -a OleoScriptSwashCaps-Regular.ttf.ttx OleoScriptSwashCaps-Bold.ttf.ttx src/OleoScriptSwashCaps-Bold.otf.ttx src/OleoScriptSwashCaps-Regular.otf.ttx src/OleoScriptSwashCaps-Regular-TTF.sfd src/OleoScriptSwashCaps-Bold-TTF.sfd OleoScriptSwashCaps-Regular.ttf._p_r_e_p.ttx OleoScriptSwashCaps-Regular.ttf.D_S_I_G_.ttx OleoScriptSwashCaps-Regular.ttf._m_a_x_p.ttx OleoScriptSwashCaps-Regular.ttf.O_S_2f_2.ttx OleoScriptSwashCaps-Regular.ttf._l_o_c_a.ttx OleoScriptSwashCaps-Regular.ttf._c_m_a_p.ttx OleoScriptSwashCaps-Regular.ttf._g_l_y_f.ttx OleoScriptSwashCaps-Regular.ttf.G_D_E_F_.ttx OleoScriptSwashCaps-Regular.ttf._n_a_m_e.ttx OleoScriptSwashCaps-Regular.ttf._h_e_a_d.ttx OleoScriptSwashCaps-Regular.ttf._p_o_s_t.ttx OleoScriptSwashCaps-Regular.ttf._h_h_e_a.ttx OleoScriptSwashCaps-Regular.ttf.G_S_U_B_.ttx OleoScriptSwashCaps-Regular.ttf.GlyphOrder.ttx OleoScriptSwashCaps-Regular.ttf.F_F_T_M_.ttx OleoScriptSwashCaps-Regular.ttf.G_P_O_S_.ttx OleoScriptSwashCaps-Regular.ttf._h_m_t_x.ttx OleoScriptSwashCaps-Regular.ttf._g_a_s_p.ttx OleoScriptSwashCaps-Bold.ttf.GlyphOrder.ttx OleoScriptSwashCaps-Bold.ttf.D_S_I_G_.ttx OleoScriptSwashCaps-Bold.ttf._p_o_s_t.ttx OleoScriptSwashCaps-Bold.ttf.G_S_U_B_.ttx OleoScriptSwashCaps-Bold.ttf._g_a_s_p.ttx OleoScriptSwashCaps-Bold.ttf._g_l_y_f.ttx OleoScriptSwashCaps-Bold.ttf._h_m_t_x.ttx OleoScriptSwashCaps-Bold.ttf._n_a_m_e.ttx OleoScriptSwashCaps-Bold.ttf.G_P_O_S_.ttx OleoScriptSwashCaps-Bold.ttf.F_F_T_M_.ttx OleoScriptSwashCaps-Bold.ttf._h_e_a_d.ttx OleoScriptSwashCaps-Bold.ttf.G_D_E_F_.ttx OleoScriptSwashCaps-Bold.ttf._c_m_a_p.ttx OleoScriptSwashCaps-Bold.ttf._l_o_c_a.ttx OleoScriptSwashCaps-Bold.ttf.O_S_2f_2.ttx OleoScriptSwashCaps-Bold.ttf._h_h_e_a.ttx OleoScriptSwashCaps-Bold.ttf._p_r_e_p.ttx OleoScriptSwashCaps-Bold.ttf._m_a_x_p.ttx src/OleoScriptSwashCaps-Bold.otf.C_F_F_.ttx src/OleoScriptSwashCaps-Bold.otf._m_a_x_p.ttx src/OleoScriptSwashCaps-Bold.otf._h_e_a_d.ttx src/OleoScriptSwashCaps-Bold.otf.O_S_2f_2.ttx src/OleoScriptSwashCaps-Bold.otf.GlyphOrder.ttx src/OleoScriptSwashCaps-Bold.otf._h_h_e_a.ttx src/OleoScriptSwashCaps-Bold.otf._k_e_r_n.ttx src/OleoScriptSwashCaps-Bold.otf._p_o_s_t.ttx src/OleoScriptSwashCaps-Bold.otf._c_m_a_p.ttx src/OleoScriptSwashCaps-Bold.otf._n_a_m_e.ttx src/OleoScriptSwashCaps-Bold.otf.G_P_O_S_.ttx src/OleoScriptSwashCaps-Bold.otf._h_m_t_x.ttx src/OleoScriptSwashCaps-Regular.otf.G_P_O_S_.ttx src/OleoScriptSwashCaps-Regular.otf._k_e_r_n.ttx src/OleoScriptSwashCaps-Regular.otf.C_F_F_.ttx src/OleoScriptSwashCaps-Regular.otf._h_m_t_x.ttx src/OleoScriptSwashCaps-Regular.otf._h_e_a_d.ttx src/OleoScriptSwashCaps-Regular.otf._m_a_x_p.ttx src/OleoScriptSwashCaps-Regular.otf._h_h_e_a.ttx src/OleoScriptSwashCaps-Regular.otf.O_S_2f_2.ttx src/OleoScriptSwashCaps-Regular.otf.GlyphOrder.ttx src/OleoScriptSwashCaps-Regular.otf._c_m_a_p.ttx src/OleoScriptSwashCaps-Regular.otf._p_o_s_t.ttx src/OleoScriptSwashCaps-Regular.otf._n_a_m_e.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources
+### (2 of 6) pyfontaine
+### (3 of 6) Run upstream tests
+$ fontbakery-check.py upstream-repo sources
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.otf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.ttf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.otf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.ttf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular-TTF.sfd /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold-TTF.sfd > fontaine.txt
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs(): OK
+WARNING: Please install [PyICU](https://pypi.python.org/pypi/PyICU) toenable [feature], perhaps with: pip install pyicu
+pyfontaine error: Not a TrueType or OpenType font (bad sfntVersion)
+pyfontaine process has been failed
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists(): OK
+$ fontbakery-check.py upstream-ttx OleoScriptSwashCaps-Bold.otf.ttx
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.otf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+$ fontbakery-check.py upstream-ttx OleoScriptSwashCaps-Regular.ttf.ttx
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.ttf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+$ fontbakery-check.py upstream-ttx OleoScriptSwashCaps-Regular.otf.ttx
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.otf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+$ fontbakery-check.py upstream-ttx OleoScriptSwashCaps-Bold.ttf.ttx
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.ttf.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+$ fontbakery-check.py upstream OleoScriptSwashCaps-Regular-TTF.sfd
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_unicode_value_should_appear_only_once_per_font.UnicodeValueShouldAppearOnlyOnce.testUnicodeValue(): ERROR
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_contour_count.TestContourCount.test_contour_count(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+$ fontbakery-check.py upstream OleoScriptSwashCaps-Bold-TTF.sfd
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_unicode_value_should_appear_only_once_per_font.UnicodeValueShouldAppearOnlyOnce.testUnicodeValue(): ERROR
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_contour_count.TestContourCount.test_contour_count(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+### (4 of 6) Convert sources to TTF
+$ ttx -d /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.ttx /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.ttx
+strippedname:/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular-TTF.sfd
+strippedname:/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold-TTF.sfd
+Compiling "/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Bold.ttx" to "/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'DSIG' table...
+Compiling "/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/sources/OleoScriptSwashCaps-Regular.ttx" to "/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.otf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'name' table...
+Parsing 'cmap' table...
+Parsing 'post' table...
+Parsing 'CFF ' table...
+Parsing 'GPOS' table...
+Parsing 'hmtx' table...
+Parsing 'kern' table...
+### Test OleoScriptSwashCaps-Bold.ttf
+$ fontbakery-check.py result OleoScriptSwashCaps-Bold.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+### Optimize TTF OleoScriptSwashCaps-Bold.ttf
+$ ls -l 'OleoScriptSwashCaps-Bold.ttf'* # look at the size savings of that subset process
+OleoScriptSwashCaps-Bold.ttf.opt: 37916 bytes
+OleoScriptSwashCaps-Bold.ttf: 39748 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf.opt /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+### Autohint TTFs (ttfautohint) OleoScriptSwashCaps-Bold.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf '/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf: 37916 bytes
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.autohint.ttf: 77432 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.autohint.ttf /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+### Subset TTFs (pyftsubset) OleoScriptSwashCaps-Bold.ttf
+$ pyftsubset OleoScriptSwashCaps-Bold.latin
+$ pyftsubset OleoScriptSwashCaps-Bold.menu
+spaceWidth is    200
+nbspWidth is     200
+Nothing to do
+strippedname:/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold.ttf
+$ fontbakery-build-font2ttf.py sources/OleoScriptSwashCaps-Regular.otf OleoScriptSwashCaps-Regular.ttf
+This font contains both a 'kern' table and a 'GPOS' table.
+  The 'kern' table will only be read if there is no 'kern' feature in 'GPOS'.
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf)
+strippedname:/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.otf
+### Test OleoScriptSwashCaps-Regular.ttf
+$ fontbakery-check.py result OleoScriptSwashCaps-Regular.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+### Optimize TTF OleoScriptSwashCaps-Regular.ttf
+$ ls -l 'OleoScriptSwashCaps-Regular.ttf'* # look at the size savings of that subset process
+OleoScriptSwashCaps-Regular.ttf.opt: 37776 bytes
+OleoScriptSwashCaps-Regular.ttf: 39808 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf.opt /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+### Autohint TTFs (ttfautohint) OleoScriptSwashCaps-Regular.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf '/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf: 37776 bytes
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.autohint.ttf: 63740 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.autohint.ttf /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+### Subset TTFs (pyftsubset) OleoScriptSwashCaps-Regular.ttf
+$ pyftsubset OleoScriptSwashCaps-Regular.latin
+$ pyftsubset OleoScriptSwashCaps-Regular.menu
+spaceWidth is    200
+nbspWidth is     200
+Nothing to do
+strippedname:/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular.ttf
+$ fontbakery-build-font2ttf.py sources/OleoScriptSwashCaps-Regular-TTF.sfd OleoScriptSwashCaps-Regular-TTF.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf)
+### Test OleoScriptSwashCaps-Regular-TTF.ttf
+$ fontbakery-check.py result OleoScriptSwashCaps-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+### Optimize TTF OleoScriptSwashCaps-Regular-TTF.ttf
+$ ls -l 'OleoScriptSwashCaps-Regular-TTF.ttf'* # look at the size savings of that subset process
+OleoScriptSwashCaps-Regular-TTF.ttf.opt: 37612 bytes
+OleoScriptSwashCaps-Regular-TTF.ttf: 39640 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf.opt /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+### Autohint TTFs (ttfautohint) OleoScriptSwashCaps-Regular-TTF.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf '/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf: 37612 bytes
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.autohint.ttf: 63548 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.autohint.ttf /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+### Subset TTFs (pyftsubset) OleoScriptSwashCaps-Regular-TTF.ttf
+$ pyftsubset OleoScriptSwashCaps-Regular-TTF.latin
+$ pyftsubset OleoScriptSwashCaps-Regular-TTF.menu
+spaceWidth is    200
+nbspWidth is     200
+Nothing to do
+strippedname:/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Regular-TTF.ttf
+$ fontbakery-build-font2ttf.py sources/OleoScriptSwashCaps-Bold-TTF.sfd OleoScriptSwashCaps-Bold-TTF.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf)
+### Test OleoScriptSwashCaps-Bold-TTF.ttf
+$ fontbakery-check.py result OleoScriptSwashCaps-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+### Optimize TTF OleoScriptSwashCaps-Bold-TTF.ttf
+$ ls -l 'OleoScriptSwashCaps-Bold-TTF.ttf'* # look at the size savings of that subset process
+OleoScriptSwashCaps-Bold-TTF.ttf.opt: 37364 bytes
+OleoScriptSwashCaps-Bold-TTF.ttf: 39440 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf.opt /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+### Autohint TTFs (ttfautohint) OleoScriptSwashCaps-Bold-TTF.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf '/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf: 37364 bytes
+/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.autohint.ttf: 76688 bytes
+$ mv /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.autohint.ttf /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+### Subset TTFs (pyftsubset) OleoScriptSwashCaps-Bold-TTF.ttf
+$ pyftsubset OleoScriptSwashCaps-Bold-TTF.latin
+$ pyftsubset OleoScriptSwashCaps-Bold-TTF.menu
+spaceWidth is    200
+nbspWidth is     200
+Nothing to do
+strippedname:/home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build/OleoScriptSwashCaps-Bold-TTF.ttf
+### (5 of 6) Generate METADATA.json (fontbakery-build-metadata.py)
+$ fontbakery-build-metadata.py /home/travis/build/fontdirectory/oleoscriptswashcaps/builds/build
+{} exists
+Designer's name from font is: Soytutype
+Original size: 63740\nGzip size: 33744
+Family Name: Oleo Script Swash Caps
+PS Name: OleoScriptSwashCaps-Regular
+Full Name: Oleo Script Swash Caps
+Style: normal
+Weight: 400
+Filename: OleoScriptSwashCaps-Regular.ttf
+Copyright: Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'
+Family Name: Oleo Script Swash Caps
+PS Name: OleoScriptSwashCaps-Regular
+Full Name: Oleo Script Swash Caps
+Style: normal
+Weight: 400
+Filename: OleoScriptSwashCaps-Regular-TTF.ttf
+Copyright: Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'
+Family Name: Oleo Script Swash Caps
+PS Name: OleoScriptSwashCaps-Bold
+Full Name: Oleo Script Swash Caps Bold
+Style: normal
+Weight: 700
+Filename: OleoScriptSwashCaps-Bold.ttf
+Copyright: Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'
+Family Name: Oleo Script Swash Caps
+PS Name: OleoScriptSwashCaps-Bold
+Full Name: Oleo Script Swash Caps Bold
+Style: normal
+Weight: 700
+Filename: OleoScriptSwashCaps-Bold-TTF.ttf
+Copyright: Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'
+### (6 of 6) Run tests for METADATA.json
+$ fontbakery-check.py metadata METADATA.json
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin(): OK
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin_ext(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_menu(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_more_than_500b(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_valid_html(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_daltonmaag_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontbureau_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontscom_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontshop_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontsmith_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_houseind_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_myfonts_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_veer_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_family_is_listed_in_gwf(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_atleast_latin_menu_subsets_exist(): OK
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/tests/metadata_test.py:141: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  self.assertTrue(designer in designers,
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_designer_exists_in_profiles_csv(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_items_dicts(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_no_dupes(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_has_unique_style_weight_pairs(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_license(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_no_unknown_top_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_subsets_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_top_keys_types(): OK
+bakery_lint.tests.downstream.test_check_canonical_filenames.CheckCanonicalFilenames.test_check_canonical_filenames(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckCanonicalWeights.test_check_canonical_weights(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckPostScriptNameMatchesWeight.test_postscriptname_contains_correct_weight(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFontWeightSameAsInMetadata.test_font_weight_same_as_in_metadata(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFullNameEqualCanonicalName.test_metadata_contains_current_font(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_contains_correct_rfn(): FAIL
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_is_consistent_across_family(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_matches_pattern(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_metadata_copyright_size(): OK
+bakery_lint.tests.downstream.test_check_canonical_styles.CheckCanonicalStyles.test_check_canonical_styles(): OK
+bakery_lint.tests.downstream.test_check_menu_contains_proper_glyphs.CheckMenuSubsetContainsProperGlyphs.test_check_menu_contains_proper_glyphs(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_copyrighttxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_description_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_fontlogtxt_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_licensetxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_metadata_matches_nametable.CheckMetadataMatchesNameTable.test_check_metadata_matches_nametable(): OK
+bakery_lint.tests.downstream.test_check_files_menu_agreements.CheckFontsMenuAgreements.test_menu_file_agreement(): OK
+bakery_lint.tests.downstream.test_check_metadata_fields.CheckMetadataFields.test_check_metadata_fields(): OK
+bakery_lint.tests.downstream.test_check_subsets_exists.CheckSubsetsExist.test_check_subsets_exists(): FAIL
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckItalicStyleMatchesMacStyle.test_check_italic_style_matches_names(): OK
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckNormalStyleMatchesMacStyle.test_check_normal_style_matches_names(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.TestFontOnDiskFamilyEqualToMetadataJSON.test_font_on_disk_family_equal_in_metadata_json(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.TestPostScriptNameInMetadataEqualFontOnDisk.test_postscriptname_in_metadata_equal_to_font_on_disk(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_font_name_matches_family(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family_values_are_all_the_same(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_filename_matches_postscriptname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_font_have_regular(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fonts_fields_have_fontname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_is_equal_to_internal_font_fullname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_matches_postScriptName(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_400(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_normal(): FAIL
+bakery_lint.tests.downstream.test_check_font_name_not_in_camelcase.CheckFontNameNotInCamelCase.test_fontname_not_in_camel_case(): OK
+bakery_lint.tests.downstream.test_check_monospace_agreements.CheckMonospaceAgreement.test_check_monospace_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_encodings_of_glyphs_across_family(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_names_of_glyphs_across_family(): FAIL
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_number_of_glyphs_across_family(): FAIL
+bakery_lint.tests.downstream.test_check_familyname_matches_fontnames.CheckFamilyNameMatchesFontNames.test_check_familyname_matches_fontnames(): OK
+{
+  "name": "Oleo Script Swash Caps", 
+  "designer": "soytutype fonts", 
+  "license": "OFL", 
+  "visibility": "Sandbox", 
+  "category": "Display", 
+  "size": 18710, 
+  "fonts": [
+    {
+      "name": "Oleo Script Swash Caps", 
+      "postScriptName": "OleoScriptSwashCaps-Regular", 
+      "fullName": "Oleo Script Swash Caps", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "OleoScriptSwashCaps-Regular.ttf", 
+      "copyright": "Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'"
+    }, 
+    {
+      "name": "Oleo Script Swash Caps", 
+      "postScriptName": "OleoScriptSwashCaps-Regular", 
+      "fullName": "Oleo Script Swash Caps", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "OleoScriptSwashCaps-Regular-TTF.ttf", 
+      "copyright": "Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'"
+    }, 
+    {
+      "name": "Oleo Script Swash Caps", 
+      "postScriptName": "OleoScriptSwashCaps-Bold", 
+      "fullName": "Oleo Script Swash Caps Bold", 
+      "style": "normal", 
+      "weight": 700, 
+      "filename": "OleoScriptSwashCaps-Bold.ttf", 
+      "copyright": "Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'"
+    }, 
+    {
+      "name": "Oleo Script Swash Caps", 
+      "postScriptName": "OleoScriptSwashCaps-Bold", 
+      "fullName": "Oleo Script Swash Caps Bold", 
+      "style": "normal", 
+      "weight": 700, 
+      "filename": "OleoScriptSwashCaps-Bold-TTF.ttf", 
+      "copyright": "Copyright (c) 2012, Soytutype (contact@soytutype.com.ar|soytutype@gmail.com), with reserved fontname 'Oleo'"
+    }
+  ], 
+  "subsets": [
+    "latin", 
+    "menu"
+  ], 
+  "dateAdded": "2012-11-12"
+}
